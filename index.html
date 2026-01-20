@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrición Profesional - Módulos Especializados</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    </head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <span>🥗</span>
+                <span>Nutrición Profesional</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#modulos">Módulos</a></li>
+                <li><a href="#acceso">Acceso</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="container">
+            <h1>Eleva tu Práctica Nutricional</h1>
+            <p>Módulos especializados para nutricionistas profesionales y estudiantes</p>
+            <button class="cta-button" onclick="document.getElementById('modulos').scrollIntoView({behavior: 'smooth'})">
+                Explorar Módulos
+            </button>
+        </div>
+    </section>
+
+    <section class="modules" id="modulos">
+        <div class="container">
+            <h2>Nuestros Módulos Especializados</h2>
+            
+            <div class="modules-grid">
+                <div class="module-card">
+                    <div class="module-icon">🏥</div>
+                    <h3>Módulo Clínico</h3>
+                    <p>Recursos completos para nutrición clínica y manejo de pacientes</p>
+                    <ul class="module-features">
+                        <li>Protocolos de evaluación nutricional</li>
+                        <li>Guías de patologías comunes</li>
+                        <li>Planes de intervención nutricional</li>
+                        <li>Casos clínicos resueltos</li>
+                        <li>Herramientas de seguimiento</li>
+                    </ul>
+                    <div class="price">S/.49.99</div>
+                    <button class="buy-button" onclick="iniciarCompra('clinico', 49.99)">
+                        Comprar Ahora
+                    </button>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-icon">👥</div>
+                    <h3>Módulo Comunitario</h3>
+                    <p>Herramientas para nutrición en salud pública y comunidad</p>
+                    <ul class="module-features">
+                        <li>Programas de educación nutricional</li>
+                        <li>Estrategias de intervención comunitaria</li>
+                        <li>Diagnóstico nutricional poblacional</li>
+                        <li>Materiales educativos listos</li>
+                        <li>Proyectos de impacto social</li>
+                    </ul>
+                    <div class="price">S/.44.99</div>
+                    <button class="buy-button" onclick="iniciarCompra('comunitario', 44.99)">
+                        Comprar Ahora
+                    </button>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-icon">⚡</div>
+                    <h3>Módulo Deportivo</h3>
+                    <p>Especialización en nutrición deportiva y rendimiento</p>
+                    <ul class="module-features">
+                        <li>Periodización nutricional</li>
+                        <li>Suplementación basada en evidencia</li>
+                        <li>Planes para diferentes deportes</li>
+                        <li>Estrategias de composición corporal</li>
+                        <li>Recuperación y adaptación</li>
+                    </ul>
+                    <div class="price">S/.54.99</div>
+                    <button class="buy-button" onclick="iniciarCompra('deportivo', 54.99)">
+                        Comprar Ahora
+                    </button>
+                </div>
+            </div>
+
+            <div class="complete-package">
+                <h3>🎁 Paquete Completo</h3>
+                <p>Accede a los 3 módulos y ahorra un 33%</p>
+                <div class="old-price">$149.97</div>
+                <div class="price">$99.99</div>
+                <div class="discount">¡Ahorra $49.98!</div>
+                <button class="buy-button" onclick="iniciarCompra('completo', 99.99)">
+                    Obtener Paquete Completo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Nutrición Profesional. Todos los derechos reservados.</p>
+            <p>Desarrollado con 💚 para nutricionistas</p>
+        </div>
+    </footer>
